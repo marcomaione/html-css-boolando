@@ -48,3 +48,9 @@ top: 3%;
 background-color: white;
 
 }
+#pr{
+    text-decoration: line-through;
+}
+.prezzo{
+    color: red;
+}
