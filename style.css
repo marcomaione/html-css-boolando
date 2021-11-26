@@ -1,56 +1,108 @@
-
-.conteiner{
-width:auto;
-margin: auto;
-max-width: 1200px;
+*{
+ margin: 0%;
+ padding: 0%;
+ box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
 }
 
-
-.row{
-margin: 40px 0px;
-width: 28%;
-display:inline-block;
+.conteiner {
+    width: 80%;
+    margin: 50px auto;
+}
+.card {
+    display: inline-block;
+    width: 33%;
+    padding: 10px;
 }
 
-
-.modello {
-position: relative;
+.card .card-image {
+    position: relative;
 }
-.full-image{
+
+.card .card-heart {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    font-size: 30px;
+    background-color: white;
+    padding: 8px 15px;
+
+}
+
+.card img {
     width: 100%;
 }
 
-.sconto{
-position: relative;
-background-color: red;
-color: white;
-margin-left: 0%;
-bottom: 8%;
+.card-text .brand {
+    font-size: 14px;
+    font-weight: 300;
 }
 
-.eco{
-position: absolute;
-background-color: green;
-color: white;
-margin-left:2%;
-bottom: 8%;
-}
-
-
-.cuore{
-text-align: center;
-width: 40px;
-height: 40px;
-color: black;
-position: absolute;
-margin-left: 90%;
-top: 3%;
-background-color: white;
+.card-text .product-name {
+    text-transform: uppercase;
 
 }
-#pr{
-    text-decoration: line-through;
-}
-.prezzo{
+
+.card-text  .price {
     color: red;
 }
+
+ .card-text .original-price {
+     font-weight: 300;
+    
+}
+
+.card .card-promo {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+
+.card-promo span {
+    padding: 10px;
+}
+
+.card .card-promo .card-discount {
+    background-color:red;
+}
+
+.card .card-promo .card-tag {
+    background-color:#028759;
+}
+
+
+.card-image .first-image {
+    display:block;
+}
+
+.card-image .second-image {
+    display: none;
+
+}
+
+.card-image:hover {
+    cursor: pointer;
+}
+
+
+.card-image:hover .first-image {
+    display: none;
+
+}
+
+.card-image:hover .second-image {
+    display: block;
+
+}
+
+
+
+
+
+
